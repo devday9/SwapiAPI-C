@@ -1,5 +1,5 @@
 //
-//  DLDPlanet.h
+//  DLDFilms.h
 //  OBJCSwapiAPI
 //
 //  Created by Deven Day on 10/1/20.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DLDPlanet : NSObject
+@interface DLDFilms : NSObject
 
 @property (nonatomic, copy, readonly) NSString *title;
 @property (nonatomic, readonly) NSInteger episodeId;
@@ -21,12 +21,14 @@ NS_ASSUME_NONNULL_BEGIN
                      director:(NSString *)director
                   releaseDate:(NSString *)releaseDate;
 
-@end
-
-@interface DLDPlanet (JSONConvertable)
-
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 @end
+
+//@interface DLDFilms (JSONConvertable)
+
+//- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+
+//@end
 
 NS_ASSUME_NONNULL_END

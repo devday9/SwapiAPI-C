@@ -13,7 +13,10 @@
 		C36F585825265D54002EC205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C36F585725265D54002EC205 /* Assets.xcassets */; };
 		C36F585B25265D54002EC205 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36F585925265D54002EC205 /* LaunchScreen.storyboard */; };
 		C36F585E25265D54002EC205 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C36F585D25265D54002EC205 /* main.m */; };
-		C36F5873252664AF002EC205 /* DLDPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = C36F5872252664AF002EC205 /* DLDPlanet.m */; };
+		C36F587E25266E92002EC205 /* DLDFilms.m in Sources */ = {isa = PBXBuildFile; fileRef = C36F587D25266E92002EC205 /* DLDFilms.m */; };
+		C36F588325266EAD002EC205 /* DLDFilmsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C36F588225266EAD002EC205 /* DLDFilmsController.m */; };
+		C36F588A25267B93002EC205 /* DLDFilmTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36F588925267B93002EC205 /* DLDFilmTableViewController.swift */; };
+		C36F588D252680C2002EC205 /* DLDFilmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36F588C252680C2002EC205 /* DLDFilmTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +30,13 @@
 		C36F585A25265D54002EC205 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C36F585C25265D54002EC205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C36F585D25265D54002EC205 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C36F5871252664AF002EC205 /* DLDPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLDPlanet.h; sourceTree = "<group>"; };
-		C36F5872252664AF002EC205 /* DLDPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLDPlanet.m; sourceTree = "<group>"; };
+		C36F587C25266E92002EC205 /* DLDFilms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLDFilms.h; sourceTree = "<group>"; };
+		C36F587D25266E92002EC205 /* DLDFilms.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLDFilms.m; sourceTree = "<group>"; };
+		C36F588125266EAD002EC205 /* DLDFilmsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLDFilmsController.h; sourceTree = "<group>"; };
+		C36F588225266EAD002EC205 /* DLDFilmsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLDFilmsController.m; sourceTree = "<group>"; };
+		C36F588825267B92002EC205 /* OBJCSwapiAPI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OBJCSwapiAPI-Bridging-Header.h"; sourceTree = "<group>"; };
+		C36F588925267B93002EC205 /* DLDFilmTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLDFilmTableViewController.swift; sourceTree = "<group>"; };
+		C36F588C252680C2002EC205 /* DLDFilmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLDFilmTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +121,7 @@
 		C36F586D25265FD7002EC205 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				C36F588C252680C2002EC205 /* DLDFilmTableViewCell.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -120,6 +129,8 @@
 		C36F586E25265FEC002EC205 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C36F588925267B93002EC205 /* DLDFilmTableViewController.swift */,
+				C36F588825267B92002EC205 /* OBJCSwapiAPI-Bridging-Header.h */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -127,6 +138,8 @@
 		C36F586F25265FF3002EC205 /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C36F588125266EAD002EC205 /* DLDFilmsController.h */,
+				C36F588225266EAD002EC205 /* DLDFilmsController.m */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -134,8 +147,8 @@
 		C36F587025266006002EC205 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C36F5871252664AF002EC205 /* DLDPlanet.h */,
-				C36F5872252664AF002EC205 /* DLDPlanet.m */,
+				C36F587C25266E92002EC205 /* DLDFilms.h */,
+				C36F587D25266E92002EC205 /* DLDFilms.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,6 +184,7 @@
 				TargetAttributes = {
 					C36F584725265D52002EC205 = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -210,9 +224,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36F587E25266E92002EC205 /* DLDFilms.m in Sources */,
 				C36F584D25265D52002EC205 /* AppDelegate.m in Sources */,
+				C36F588D252680C2002EC205 /* DLDFilmTableViewCell.swift in Sources */,
+				C36F588325266EAD002EC205 /* DLDFilmsController.m in Sources */,
 				C36F585E25265D54002EC205 /* main.m in Sources */,
-				C36F5873252664AF002EC205 /* DLDPlanet.m in Sources */,
+				C36F588A25267B93002EC205 /* DLDFilmTableViewController.swift in Sources */,
 				C36F585025265D52002EC205 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +373,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OBJCSwapiAPI/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -364,6 +382,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.DevenDay.OBJCSwapiAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OBJCSwapiAPI/Controllers/ViewControllers/OBJCSwapiAPI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -373,6 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OBJCSwapiAPI/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -381,6 +403,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.DevenDay.OBJCSwapiAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OBJCSwapiAPI/Controllers/ViewControllers/OBJCSwapiAPI-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
