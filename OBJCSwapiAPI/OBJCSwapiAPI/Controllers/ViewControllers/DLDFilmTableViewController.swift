@@ -10,7 +10,13 @@ import UIKit
 class DLDFilmTableViewController: UITableViewController {
     
     //MARK: - Properties
-    var fetchedFilms: [DLDFilms] = []
+    var fetchedFilms: [DLDFilms] = [] {
+        didSet {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +46,10 @@ class DLDFilmTableViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "filmCell", for: indexPath) as? DLDFilmTableViewCell else {return UITableViewCell()}
         
         let film = fetchedFilms[indexPath.row]
-        cell.titleLabel.text = film.title
+        cell.movieTitleLabel.text = film.title
+        cell.episodeLabel.text = "\(film.episodeId)"
+        cell.directorLabel.text = film.director
+        cell.releaseDateLabel.text = film.releaseDate
         
         return cell
     }

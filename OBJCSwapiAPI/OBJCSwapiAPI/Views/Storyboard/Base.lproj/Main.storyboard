@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H60-Yo-XOu">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17156"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -70,10 +70,10 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="directorLabel" destination="3Bi-3j-fcX" id="aRT-3a-qnL"/>
-                                    <outlet property="episodeLabel" destination="CLG-Ft-oKc" id="gum-gr-d6Z"/>
-                                    <outlet property="releaseDateLabel" destination="LCD-yE-E6D" id="3vC-NG-83o"/>
-                                    <outlet property="titleLabel" destination="PEJ-Ou-qum" id="j8P-lT-vDx"/>
+                                    <outlet property="directorLabel" destination="3Bi-3j-fcX" id="kAN-7y-bsR"/>
+                                    <outlet property="episodeLabel" destination="CLG-Ft-oKc" id="M0h-0N-VR5"/>
+                                    <outlet property="movieTitleLabel" destination="PEJ-Ou-qum" id="DAe-9g-3V7"/>
+                                    <outlet property="releaseDateLabel" destination="LCD-yE-E6D" id="G1g-SU-lrc"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

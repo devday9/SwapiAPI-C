@@ -39,7 +39,9 @@ static NSString * const jsonComponentString = @".json";
             return;
         }
         
-        NSDictionary *topLevelDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+        if (data)
+        {
+            NSDictionary *topLevelDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
         
         if (!topLevelDictionary)
         {
@@ -48,17 +50,17 @@ static NSString * const jsonComponentString = @".json";
             return;
         }
         
-        NSArray * arrayOfFilms = topLevelDictionary[filmsComponent];
+        NSArray * arrayOfFilms = topLevelDictionary[@"results"];
         
         NSMutableArray *filmsPlaceholder = [NSMutableArray array];
-        
-        for (NSDictionary *filmDictionary in arrayOfFilms)
+        for (NSDictionary *dataDictionary in arrayOfFilms)
         {
-            DLDFilms *film = [[DLDFilms alloc] initWithDictionary:filmDictionary];
+            DLDFilms *film = [[DLDFilms alloc] initWithDictionary:dataDictionary];
             [filmsPlaceholder addObject:film];
         }
         completion(filmsPlaceholder);
     
+        }
     }] resume];
 }
 
