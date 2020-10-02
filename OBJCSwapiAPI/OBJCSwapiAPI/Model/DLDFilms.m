@@ -35,19 +35,3 @@
 }
 
 @end
-
-//@implementation DLDFilms (JSONConvertable)
-
-//- (instancetype)initWithDictionary:(NSDictionary *)dictionary
-//{
-////    NSDictionary *dataDictionary = dictionary[@"results"];
-//
-//    NSString *title = dataDictionary[@"title"];
-//    NSInteger episodeId = [dataDictionary[@"episode_id"] integerValue];
-//    NSString *director = dataDictionary[@"director"];
-//    NSString *releaseDate = dataDictionary[@"release_date"];
-//
-//    return [self initWithTitle:title episodeId:episodeId director:director releaseDate:releaseDate];
-//}
-
-//@end
